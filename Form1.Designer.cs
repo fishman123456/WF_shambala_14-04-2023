@@ -34,6 +34,7 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            progressBar1 = new ProgressBar();
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)trackBar2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)trackBar3).BeginInit();
@@ -42,6 +43,7 @@
             // trackBar1
             // 
             trackBar1.Location = new Point(39, 53);
+            trackBar1.Maximum = 255;
             trackBar1.Name = "trackBar1";
             trackBar1.Size = new Size(340, 45);
             trackBar1.TabIndex = 0;
@@ -50,6 +52,7 @@
             // trackBar2
             // 
             trackBar2.Location = new Point(39, 134);
+            trackBar2.Maximum = 255;
             trackBar2.Name = "trackBar2";
             trackBar2.Size = new Size(340, 45);
             trackBar2.TabIndex = 1;
@@ -58,6 +61,7 @@
             // trackBar3
             // 
             trackBar3.Location = new Point(39, 215);
+            trackBar3.Maximum = 255;
             trackBar3.Name = "trackBar3";
             trackBar3.Size = new Size(340, 45);
             trackBar3.TabIndex = 2;
@@ -90,11 +94,20 @@
             label3.TabIndex = 5;
             label3.Text = "B";
             // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(47, 283);
+            progressBar1.Maximum = 765;
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(332, 23);
+            progressBar1.TabIndex = 6;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(404, 272);
+            ClientSize = new Size(405, 343);
+            Controls.Add(progressBar1);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -120,5 +133,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private ProgressBar progressBar1;
     }
 }
